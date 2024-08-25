@@ -23,6 +23,11 @@ const sortedArray = [10, 13, 23, 45, 69, 100, 201, 236];
 
 
 function binarySearch(arr, low, high, x){
+
+    console.log(low, high);
+
+    if(low > high) return 'element not found';
+
     const mid = Math.floor((low + high)/2);
 
     if (arr[mid] == x){
